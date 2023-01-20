@@ -4,7 +4,7 @@ include_once(__DIR__. '\..\config\DatabaseProxy.php');
 class RegisterModel {
   private $db;
   private $conn;
-
+  
   public function __construct() {
     $this->db = new DatabaseProxy();
     $this->conn = $this->db->getConn();
